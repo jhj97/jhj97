@@ -24,7 +24,7 @@ export default class Creator {
 
   async download(repo, tag) {
     // 下载地址
-    const requestUrl = ``;
+    const requestUrl = `zhurong-cli/vue-template#v2.0`;
     await loading(
       this.downloadGitRepo,
       'wait download',
