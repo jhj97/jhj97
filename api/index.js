@@ -12,6 +12,13 @@ axios.interceptors.response.use((res) => {
 export async function getZhuRongRepo() {
   return axios.get("https://api.github.com/orgs/zhurong-cli/repos");
 }
+/**
+ * 获取模板
+ * @returns nest 获取仓库信息
+ */
+export async function tableTypeChoices() {
+  return axios.get("http://localhost:3000/tableType/choices");
+}
 
 /**
  * 获取仓库下的版本
